@@ -39,7 +39,7 @@ i=0
 for label in btn_labels:
     button = tk.Button(btn_frame,font=("Arial",18),padx=20,pady=20,text=label)
     button.grid(row=i//4,column=i%4,padx=10,pady=10)
-    button.bind("<Button-1>",click)
+    button.bind("<Button>",click)
     i+=1
 
 window.mainloop()
